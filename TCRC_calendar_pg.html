@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calendar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    @media (max-width: 550px) {
+      .big-container {
+        display: none;
+      }
+    }
+    
+    @media (min-width: 550px) {
+      .small-container {
+        display: none;
+      }
+    }
+    /* Responsive iFrame */
+    
+    .responsive-iframe-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+    }
+    
+    .responsive-iframe-container iframe,
+    .vresponsive-iframe-container object,
+    .vresponsive-iframe-container embed {
+      position: absolute;
+      top: 0px;
+      left: 5%;
+      width: 90%;
+      height: 82%;
+    }
+  </style>
+
+</head>
+
+<!--Padding added top of body so that the table clears fixed Havigation Bar-->
+
+<body style="background-color: #ebebeb; padding-top:90px">
+
+
+  <!--Navigation Bar-->
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Trinity CRC</a>
+        
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">About
+        <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="TCRC_About_Us_pg.html">Trinity</a></li>
+              <li><a href="TCRC_pastor_pg.html">Our Pastor</a></li>
+              <li><a href="#">Our Programs</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact
+        <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="TCRC_Contacts_pg.html">Phone/Email</a></li>
+              <li><a href="TCRC_Find_Us.html">Find Us</a></li>
+              <li><a href="TCRC-prayer_request.html">Prayer Request</a></li>
+            </ul>
+          </li>
+
+          <li class="active"><a href="TCRC_calendar_pg.html">Calendar</a></li>
+          <li><a href="TCRC_sermon_pg.html"><span class="fa fa-file-audio-o"></span> Sermons</a></li>
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://twitter.com/trinitycrchurch" target="_blank"><span class="fa fa-twitter" style="font-size:19px"></span></a></li>
+          <li><a href="https://www.facebook.com/TrinityChristianReformed/" target="_blank"><span class="fa fa-facebook" style="font-size:19x"></span></a></li>
+          <li><a href="#"><span class="fa fa-youtube-play"  style="font-size:19px"></span></a></li>
+          <li>
+            <a href="https://www.crcna.org/" target="_blank"><img src="crxx_ChristRefChurch_graphic_color.png" width=18px>CRCNA</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!--Calendar on larger displays-->
+
+  <div class="responsive-iframe-container big-container">
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%2333ccff&amp;src=qv75aleu8fpld7rbftmdm66m08%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FToronto" style="border:solid 1px #777; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" width="100%" height="650" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+  <!--Agenda on smaller displays-->
+
+  <div class="responsive-iframe-container small-container">
+    <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=qv75aleu8fpld7rbftmdm66m08%40group.calendar.google.com&amp;color=%230D7813&amp;ctz=America%2FToronto" style="border:solid 1px #777; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+  <!--Footer-->
+
+  <div class="navbar-default navbar-info navbar-fixed-bottom">
+    <div class="container-fluid">
+      <p class="navbar-text" style="Font-size: 18px">Come join us in worship, Sundays at 10:00 AM and 5:00 PM</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
